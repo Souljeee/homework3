@@ -3,16 +3,15 @@ import java.util.Scanner;
 
 public class Homework3 {
     public static void main(String[] args) {
+        userPlaying();
+    }
+
+    public static void userPlaying() {
         Random rand = new Random();
         int count = 3;
         System.out.println("Игра началась!");
         int settedVar = rand.nextInt(10);
-        userPlaying(count, settedVar);
-    }
-
-    public static void userPlaying(int count, int settedVar) {
         int rematch;
-        Random rand = new Random();
         boolean inGame = true;
         Scanner scan = new Scanner(System.in);
         while(inGame){
@@ -44,7 +43,7 @@ public class Homework3 {
         System.out.println("Повторить игру еще раз? 1 – да / 0 – нет");
         rematch = scan.nextInt();
         if(rematch == 1){
-            userPlaying(3, rand.nextInt(10));
+            userPlaying();
         }
     }
 }
