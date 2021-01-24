@@ -42,7 +42,7 @@ public class HomeworkTask2 {
                     }
                 }
             }
-            System.out.println("Вы не угадали! Но теперь знаете некоторые символы из загаданного слова! Попробуйте еще раз!");
+            System.out.println("Вы не угадали! Попробуйте еще раз!");
             System.out.println(sb);
         }while(!inputWord.equals(settedWord));
 
